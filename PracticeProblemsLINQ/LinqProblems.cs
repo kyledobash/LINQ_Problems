@@ -11,57 +11,57 @@ namespace PracticeProblemsLINQ
         //Weighted project points: /10
         //Project points: /25
 
-        //#region Problem 1 
-        ////(5 points) Problem 1
-        ////Using LINQ, write a method that takes in a list of strings and returns all words that contain the substring “th” from a list.
-        //public static List<string> RunProblem1(List<string> words)
-        //{
-        //    //code
-        //    var containsTh = words.FindAll(w => w.Contains("th")).ToList();
+        #region Problem 1 
+        //(5 points) Problem 1
+        //Using LINQ, write a method that takes in a list of strings and returns all words that contain the substring “th” from a list.
+        public static List<string> RunProblem1(List<string> words)
+        {
+            //code
+            var containsTh = words.FindAll(w => w.Contains("th")).ToList();
 
-        //    //return
-        //    return containsTh;
-        //}
-        //#endregion
+            //return
+            return containsTh;
+        }
+        #endregion
 
-        //#region Problem 2 
-        ////(5 points) Problem 2
-        ////Using LINQ, write a method that takes in a list of strings and returns a copy of the list without duplicates.
-        //public static List<string> RunProblem2(List<string> names)
-        //{
-        //    //code
-        //    List<string> result = names.Distinct().ToList();
+        #region Problem 2 
+        //(5 points) Problem 2
+        //Using LINQ, write a method that takes in a list of strings and returns a copy of the list without duplicates.
+        public static List<string> RunProblem2(List<string> names)
+        {
+            //code
+            List<string> result = names.Distinct().ToList();
 
-        //    return result;
-        //}
-        //#endregion
+            return result;
+        }
+        #endregion
 
-        //#region Problem 3
-        ////(5 points) Problem 3
-        ////Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
-        //public static Customer RunProblem3(List<Customer> customers)
-        //{
-        //    //code
-        //    var match = customers.Find(c => c.FirstName == "Mike");
-        //    //return
-        //    return match;
-        //}
-        //#endregion
+        #region Problem 3
+        //(5 points) Problem 3
+        //Using LINQ, write a method that takes in a list of customers and returns the lone customer who has the name of Mike. 
+        public static Customer RunProblem3(List<Customer> customers)
+        {
+            //code
+            var match = customers.Find(c => c.FirstName == "Mike");
+            //return
+            return match;
+        }
+        #endregion
 
-        //#region Problem 4
-        ////(5 points) Problem 4
-        ////Using LINQ, write a method that takes in a list of customers and returns the customer who has an id of 3. 
-        ////Then, update that customer's first name and last name to completely different names and return the newly updated customer from the method.
-        //public static Customer RunProblem4(List<Customer> customers)
-        //{
-        //    //code
-        //    var idMatch = customers.Find(c => c.Id == 3);
-        //    idMatch.FirstName = "Kyle";
-        //    idMatch.LastName = "Dobash";
-        //    //return
-        //    return idMatch;
-        //}
-        //#endregion
+        #region Problem 4
+        //(5 points) Problem 4
+        //Using LINQ, write a method that takes in a list of customers and returns the customer who has an id of 3. 
+        //Then, update that customer's first name and last name to completely different names and return the newly updated customer from the method.
+        public static Customer RunProblem4(List<Customer> customers)
+        {
+            //code
+            var idMatch = customers.Find(c => c.Id == 3);
+            idMatch.FirstName = "Kyle";
+            idMatch.LastName = "Dobash";
+            //return
+            return idMatch;
+        }
+        #endregion
 
         #region Problem 5
         //(5 points) Problem 5
@@ -97,17 +97,17 @@ namespace PracticeProblemsLINQ
         }
         #endregion
 
-        //#region Bonus Problem 1
-        ////(5 points) Bonus Problem 1
-        ////Write a method that takes in a string of letters(i.e. “Terrill”) 
-        ////and returns an alphabetically ordered string corresponding to the letter frequency(i.e. "E1I1L2R2T1")
-        //public static string RunBonusProblem1(string word)
-        //{
-        //    //code
+        #region Bonus Problem 1
+        //(5 points) Bonus Problem 1
+        //Write a method that takes in a string of letters(i.e. “Terrill”) 
+        //and returns an alphabetically ordered string corresponding to the letter frequency(i.e. "E1I1L2R2T1")
+        public static string RunBonusProblem1(string word)
+        {
+            //code
 
-        //    //return
+            //return
 
-        //}
-        //#endregion
+        }
+        #endregion
     }
 }
